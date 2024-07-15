@@ -1,0 +1,207 @@
+:root {
+  --mainColor: #000b76;
+  --secindaryColor: #40c6d0;
+  --acsentColor: #7bc200;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 800px;
+  font-family: "ubuntu", sans-serif;
+}
+
+section h1 {
+  color: floralwhite;
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+/* HEro */
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+@media (max-width: 768px) {
+  #hero .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #hero .col-12 {
+    order: initial;
+  }
+  #hero .order-md-1 {
+    order: 2;
+  }
+  #hero .order-md-2 {
+    order: 1;
+  }
+
+  #hero .sosial-icon {
+    text-align: center; /* Center-align icons for mobile */
+    margin-top: 1rem; /* Add spacing between icons and photo */
+  }
+  .custom-img {
+    width: 80%; /* Adjust as needed */
+  }
+
+  .col-10 {
+    margin: 0 auto;
+  }
+}
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sosial-icon {
+  margin: 0.5rem 0; /* Add margin between each icon */
+}
+.sosial-icon-container br {
+  display: none; /* Hide the line break on mobile */
+}
+
+.cv {
+  display: block;
+  margin-top: 10px;
+}
+
+#hero {
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  height: 100vh; /* atau ketinggian yang diinginkan */
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Sesuaikan dengan kebutuhan */
+}
+
+.btn-custom1 {
+  background-color: var(--acsentColor);
+  text-align: center;
+  color: #fff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 5px rgba(255, 266, 0, 8);
+}
+
+.cv {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.sosial-icon svg {
+  margin-right: 0.7rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.an {
+  height: 80%;
+}
+
+hr {
+  width: 35%;
+  height: 10px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100;
+}
+
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secindaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#sertifikasi {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secindaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#projek {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.custom-img {
+  max-width: 450px; /* Adjust the size as needed */
+  height: auto;
+  margin: 10px;
+}
+
+.custom-img:hover,
+.custom-img:active {
+  filter: brightness(70%); /* Darken the image */
+  opacity: 0.9; /* Optional: adjust opacity */
+}
+
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-section .contact-details h5 {
+  margin-top: 20px;
+}
+
+.contact-section .contact-details p {
+  margin-bottom: 10px;
+}
+
+.contact-section .social-icons a {
+  color: #000;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.contact-section .social-icons a:hover,
+.contact-section .social-icons a:active {
+  color: #007bff; /* Change to your desired hover color */
+  opacity: 0.7; /* Optional: adjust opacity */
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.sosial-icon {
+  color: inherit; /* This keeps the color the same as the surrounding text */
+  text-decoration: none; /* This removes the underline from the link */
+}
+
+.sosial-icon:hover {
+  color: inherit; /* This keeps the color the same on hover */
+}
+
+.bar {
+  max-height: 50%;
+  max-width: 80%;
+}
+
+.contact-details-wrapper {
+  background-color: var(--secindaryColor); /* Semi-transparent blue background */
+  padding: 20px;
+  border-radius: 10px;
+}
